@@ -1,0 +1,10 @@
+# Editable install: pip install -e .
+# Or: pip install -r requirements.txt
+numpy>=1.19
+xarray>=0.19
+cftime>=1.5
+h5py>=3.1
+h5netcdf>=1.0
+pandas>=1.1
+importlib-metadata>=4.0,<5; python_version < "3.10"
+# Optional: pip install gcsfs google-auth  (then sync or stream from gs://)
