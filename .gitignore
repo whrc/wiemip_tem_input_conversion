@@ -1,5 +1,6 @@
-# Temporary conversion output — never commit
+# Temporary / generated output — never commit
 tmp/
+tem_input/
 
 # Python
 __pycache__/
