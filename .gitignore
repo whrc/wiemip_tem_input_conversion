@@ -32,3 +32,6 @@ env/
 
 # NetCDF scratch files
 *.nc~
+
+# Large reference NetCDF files (available on GCS — see README)
+tem_file_samples/historic-climate.nc
