@@ -196,3 +196,18 @@ Time: 1460 steps per year (6-hourly, noleap calendar)
 
 Reference file variables: `tair` (celsius), `precip` (mm month⁻¹), `nirr` (W m⁻²), `vapor_press` (hPa).  
 Time: monthly, 1901-01 to 2024-12, calendar `365_day`.
+
+
+## Example on downloading and converting UKESM1 daata
+
+```bash
+mkdir -p tem_UKES_output
+python -m wiemip_to_dvmdostem convert \
+  --gcs-prefix gs://wiemip/1pctCO2/input/UKESM1-0-LL/05deg \
+  --wiemip-dir wiemip_scratch \
+  --file-prefix UKESM1-0-LL_clim3_50perc_1pctCO2 \
+  --reference-nc tem_output/reference-historic-climate.nc \
+  --year-start 1850 \
+  --year-end 2000 \
+  --output tem_UKES_output/historic-climate-UKESM1-0-LL.nc
+```
